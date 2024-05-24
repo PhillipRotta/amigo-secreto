@@ -7,6 +7,11 @@ function adicionar() {
         return;
     }
 
+    if(amigos.includes(amigo.value)) { // para não incluir o mesmo nome 
+        alert('Nome já adicionado!');
+        return;
+    }
+
 
     let lista = document.getElementById('lista-amigos'); // linha 44 do HTML
     amigos.push(amigo.value);
